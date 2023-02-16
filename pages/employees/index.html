@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css">
   <link rel="stylesheet" href="go.css">
   <link href="https://fonts.googleapis.com/css?family=Roboto:100" rel="stylesheet">
+  <link rel="stylesheet" href="employee.css">
 
 </head><br /><br /><br />
 
@@ -46,49 +47,59 @@
 
   <!--End of Navbar-->
   <br /><br /><br /><br />
-  <center>
+ 
 
-    <div>
-      <div class="card" style="margin-top: 4%">
-        <div class="card-body">
-          <table><br />
-            <h5 class="card-title">ABTech Employees</h5><br>
+    <div class="container mt-5">
+      <div class="row ">
+        <center>
+      <div class="card cardsize cool">
+        <h4>
+          ABTech Employees
+          </h4></center>
+        <div class="card-body form">
+          <table>
             <h6 class="card-subtitle mb-2 text-muted">
               <form onsubmit="return store()">
                 <tr>
                   <td>First Name :</td>
-                  <td> <input type="text" id="first_name" required /> </td>
+                  <td> <input type="text" id="first_name" class="labeler inputer" required /> </td>
                 </tr>
                 <tr>
                   <td>Middle Name :</td>
-                  <td> <input type="text" id="middle_name" required /> </td>
+                  <td> <input type="text" id="middle_name" class="labeler inputer" required /> </td>
                 </tr>
                 <tr>
                   <td>LastName :</td>
-                  <td> <input type="text" id="last_name" required /> </td>
+                  <td> <input type="text" id="last_name" class="labeler inputer" required /> </td>
                 </tr>
                 <tr>
                   <td>Group :</td>
-                  <td> <select id="department"></select> </td>
+                  <td> <select id="department" style="background-color:black; color:aliceblue"></select> </td>
                 </tr>
                 <tr>
                   <td>Salary :</td>
-                  <td> <input type="number" id="salary" required /> </td>
+                  <td> <input type="number" id="salary" class="labeler inputer" required /> </td>
                 </tr>
                 <tr>
                   <td>
-                  <th><input type="submit" class="btn btn-primary w-50 m-1" value="SAVE" /></th>
+                  <th><input type="submit" class="btn btn-success w-50 m-1" value="SAVE" /></th>
                   </td>
                 </tr>
-
               </form>
             </h6>
           </table>
-
-
-          <table style="width:100%" border="1">
+        </div>
+      </div>
+  </div>
+  </div>
+  <br/><br/>
+    
+  <center>
+<div class="tablerecords">
+  <h3 style="color:white">Current list Of Employees</h3><br/><br/>
+          <table style="width:100%; color:white"; border="1">
             <tr>
-              <th>ID</th>
+              <th>ID#</th>
               <th>First Name</th>
               <th>Middle Name</th>
               <th>Last Name</th>
@@ -96,17 +107,14 @@
               <th>Salary</th>
               <th>Action</th>
             </tr>
-            <tbody id="records"></tbody>
+           <tbody id="records"></tbody>
           </table>
-        </div>
-      </div>
-    </center>
-  </div>
-  </div>
 
-  <br/><br/><br/><br/><br/><br/><br/>
+        </div></center>
+
+
     <!--Footer-->
-    <section class="">
+    <section class="footer">
                 <div class="container text-center text-md-start mt-5" style="color:aliceblue">
 
                     <div class="row mt-3">

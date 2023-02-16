@@ -64,35 +64,20 @@
 <br /><br /><br /><br /><br /><br />
 
 
-    <div class="card" style="margin-top: 2%"><center>
-      <div class="card-body"><br />
-        <h4 class="card-title">"List of Job Order Services"</h4></center>
-        <h6 class="card-subtitle mb-2 text-muted center">
-          <button id="modalClickerShow" type="button" class="btn btn-success " data-bs-toggle="modal"
+    <div class="card" style="margin-top: 2%; margin-left:7%; width: 85%; background:rgb(221, 216, 216)"><center>
+      <div class="card-body " style="background: #F6BE00"><br />
+        <h4 class="card-title"><strong>"List of Job Order Services"</strong></h4></center>
+        <h6 class="card-subtitle mb-2 text-muted center" style="background: #F6BE00">
+          <button id="modalClickerShow" type="button" class="btn btn-success m-1" data-bs-toggle="modal"
             data-bs-target="#formModal">
             Add New
           </button>
-          <button class="btn btn-danger" onclick="getSelected()" style="float:right">DELETE SELECTED</button><br /><br />
-          <!--TODO-->
-          <!-- <form onsubmit="return store()">
-              Name: <input type="text" id="name" required /> <br />
-              Price : <input type="number" id="price" required /> <br />
-              <input type="submit" value="SAVE ITEM" />
-            </form> -->
+          <button class="btn btn-danger m-1" onclick="getSelected()" style="float:right">DELETE SELECTED</button><br /><br />
         </h6>
 
-        <table id="records" style="width: 100%;" class="display responsive nowrap cell-border compact stripe">
+        <table id="records" style="width: 100%; background:white;" class="display responsive nowrap cell-border compact stripe">
           <thead>
-            <tr>
-              <!--TODO-->
-              <!-- 
-                    <th></th>
-                    <th>Customer #</th>
-                    <th>Customer Name</th>
-                    <th>Amount to pay</th>
-                    <th>Transaction date</th>
-                    <th>Action</th> 
-                    -->
+            <tr style="background: #F6BE00;">
               <th></th>
               <th>Service #</th>
               <th>Service Name</th>
@@ -100,7 +85,7 @@
               <th>Listed date</th>
               <th>Action</th>
             </tr>
-          </thead>
+          </thead >
           <tbody></tbody>
         </table>
       </div>
@@ -116,7 +101,7 @@
         <div class="modal-dialog">
           <div class="modal-content">
             <div class="modal-header">
-              <h1 class="modal-title fs-5" id="exampleModalLabel">Services Form</h1>
+              <h1 class="modal-title fs-5" id="exampleModalLabel">ADD ABTech SERVICES</h1>
               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">

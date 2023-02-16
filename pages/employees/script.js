@@ -54,7 +54,7 @@ function index()
                     "<td>" + jsonParse.records[i].last_name + "</td>" + 
                     "<td>" + jsonParse.records[i].department_id + "</td>" + 
                     "<td>" + jsonParse.records[i].salary + "</td>" + 
-                    "<td><button onclick='update(" +jsonParse.records[i].id+ ")'>SAVE EDIT</button><button onclick='show(" +jsonParse.records[i].id+ ")'>SHOW</button>&nbsp;"+
+                    "<td><button onclick='update(" +jsonParse.records[i].id+ ")'>SAVE EDIT</button><button onclick='show(" +jsonParse.records[i].id+ ")'>SHOW</button>"+
                     "<button onclick='destroy(" +jsonParse.records[i].id+ ")'>DELETE</button></td>" + 
                 "</tr>";
             }
@@ -93,7 +93,7 @@ function show(id)
                     "<td>" + jsonParse.records[i].last_name + "</td>" + 
                     "<td>" + jsonParse.records[i].department_id + "</td>" + 
                     "<td>" + jsonParse.records[i].salary + "</td>" + 
-                    "<td><button onclick='show(" +jsonParse.records[i].id+ ")'>SHOW</button>&nbsp;"+
+                    "<td><button onclick='show(" +jsonParse.records[i].id+ ")'>SHOW</button>"+
                     "<button onclick='destroy(" +jsonParse.records[i].id+ ")'>DELETE</button></td>" + 
                 "</tr>";
             }
